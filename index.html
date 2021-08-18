@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<title>Delivery_Slip</title>
+<meta charset="utf-8">
+
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Delivery Slip</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.0/JsBarcode.all.min.js"></script>
+    
+
+
+</head>
+<body>
+
+        <div style="width: 1240px; height: 100%; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+            margin-left: 175px;"
+            class="container-fluid">
+
+            <div style="padding: 170px 120px 30px 100px;">
+                <div class="row">
+                    <div class="col-8">
+                        <img src="./Screenshot_3.jpg" alt="">
+                    </div>
+                    <div class="col-4" style="margin-top: -30px; position: absolute; right: -40px; line-height: 15px;">
+                        <h4><b>FØLGESEDDEL</b></h4>
+                        <p>ORDRE # / <b>6905</b></p>
+                        <p>ORDRE DATO / 2021-08-10</p>
+                    </div>
+                </div>
+                <br><br><br>
+                <div class="row">
+                    <div class="col-4" style="line-height: normal;">
+                        <h5 style="font-weight: bold;">FAKTURERET TIL</h5>
+                        <p>B.E. INSTALLATION</p>
+                        <p>Mads Dam</p>
+                        <p>Lundvej 50</p>
+                        <p>Viborg - 8800</p>
+                    </div>
+                    <div class="col-4" style="line-height: normal;">
+                        <h5 style="font-weight: bold;">SENDT TIL</h5>
+                        <p>&nbsp;</p>
+                        <p>Mads Dam</p>
+                        <p>Lundvej 50</p>
+                        <p>Viborg - 8800</p>
+                    </div>
+                    <div class="col-4" style="line-height: normal;">
+                        <h5 style="font-weight: bold;">FORSENDELSE</h5>
+                        <p><i>Postnord Med Omdeling</i></p>
+                    </div>
+                </div>
+                <br><br><br>
+                <div class="row">
+                    <div class="col-12" style="height: 100%;">
+                        <table class="table table-borderless" style="border-top: 5px solid black;">
+                            <thead>
+                                <th style="text-align: center;"></th>
+                                <th style="text-align: center;">BILLEDE</th>
+                                <th style="text-align: center;">VARE NR.</th>
+                                <th style="text-align: center;">VARE NAVN</th>
+                                <th style="text-align: center;">ANTAL</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+            <td style="width: 15%; text-align: center; vertical-align: middle;">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACECAYAAABRRIOnAAAAAklEQVR4AewaftIAAAOgSURBVO3BQY7cSAADQWah///l3DnsgScBgjQN22AE/sjM/05myslMOZkpJzPlZKaczJSTmXIyU05myslMOZkpJzPlZKaczJSTmfLJQ0C+Sc0VIE3NE0CuqLkC5JvUPHEyU05myslM+eRlat4E5AqQpuYOIN+k5k1A3nQyU05myslM+eSXAblDzR1qrgBpapqaK0B+E5A71Pymk5lyMlNOZson/xggV4A0NXeo+ZedzJSTmXIyUz75ywFpahqQK0DuAHJFzd/sZKaczJSTmfLJL1Pzm9Q0IFfUPAGkqXlCzZ/kZKaczJSTmfLJy4B8E5CmpgG5AqSpaUCamgakqbkC5E92MlNOZsrJTMEf+YcB+SY1f7OTmXIyU05myicPAWlqGpCmpgFpahqQpuYONQ1IU9OAfBOQpuYKkKbmTScz5WSmnMwU/JEHgDyhpgFpau4AckVNA9LU3AGkqWlAmpo3AWlqnjiZKScz5WSm4I+8CEhT04A0NVeANDVXgLxJzR1A7lBzBcgdap44mSknM+VkpuCPPACkqWlAmpoGpKm5AuSKmitA/iRq7gDS1LzpZKaczJSTmfLJlwFpahqQK2oakAakqWlqGpCmpgFpahqQNwFpaq4AaWqeOJkpJzPlZKZ88pCaBqSpaUAakCtqrqi5AuSKmgbkN6l5Qk0D8qaTmXIyU05mCv7IA0CamgbkTWreBKSpaUCamjuAXFFzBcgdap44mSknM+VkpuCPvAhIU9OAXFFzBUhT04A0NQ1IU9OANDUNyBU1dwBpaq4AaWredDJTTmbKyUzBH3kASFPTgDQ1Dcg3qWlA/mRqvulkppzMlJOZgj/yFwNyRU0D0tQ0IE1NA3JFzR1ArqhpQK6oeeJkppzMlJOZ8slDQL5JTVNzBUhTc0VNA/IEkKbmT3YyU05myslM+eRlat4E5A4gb1LTgNyh5jepedPJTDmZKScz5ZNfBuQONXcAuQPIFTVX1DQgDcg3AWlqnjiZKScz5WSmfPKXU9OANDUNSFPzhJo7gNwBpKn5TScz5WSmnMyUT/5yQJqaNwG5Q80VNQ1IU3MHkKbmiZOZcjJTTmbKJ79MzW9S8wSQK2oakDuANDVXgDQ1DUhT86aTmXIyU05myicvA/JNQJqaBqSpaUCamgbkCTUNSFPzBJCm5omTmXIyU05mCv7IzP9OZsrJTDmZKScz5WSmnMyUk5lyMlNOZsrJTDmZKScz5WSmnMyUk5nyH47bqQhyT+mxAAAAAElFTkSuQmCC" alt="Qr code">
+            </td>
+            <td style="width: 15%; text-align: center; vertical-align: middle;">
+                <img style="width: 80px; height: 80px;" src="https://svane-el.dk/456-medium_default/dobbelt-relae-12v-transistorstyret-forside-20002222.jpg" alt="">
+            </td>
+            <td style="width: 15%; text-align: center; vertical-align: middle;">
+                20002222
+            </td>
+            <td style="width: 15%; text-align: center; vertical-align: middle;">
+                DOBBELT RELÆ 12V TRANSISTORSTYRET
+            </td>
+            <td style="width: 15%; text-align: center; vertical-align: middle;">
+                5
+            </td>
+        </tr><tr>
+            <td style="width: 15%; text-align: center; vertical-align: middle;">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACECAYAAABRRIOnAAAAAklEQVR4AewaftIAAAN0SURBVO3BQW7kWhIEQY8E739lHy3+IlcPIMiqkRphFn9Q9Z+hahmqlqFqGaqWoWoZqpahahmqlqFqGaqWoWoZqpahahmqlqFquXgoCd+ksiVhU7kjCZvKHUnYVLYkfJPKE0PVMlQtQ9Vy8TKVNyXhiSRsKm9SuUPlTUl401C1DFXLULVcfFgS7lC5Q+VNSdhUtiRsKk8k4Q6VTxqqlqFqGaqWiz8uCU+obEnYkrCp/MuGqmWoWoaq5eKPU/mmJGwq/5KhahmqlqFqufgwlW9Kwh0qm8odSdhU7lD5TYaqZahahqrl4mVJ+KYkbCpbEjaVLQmbypaETeWJJPxmQ9UyVC1D1XLxkMpvprIl4Q6VJ1T+kqFqGaqWoWq5eCgJm8qWhBOVLQl3qHxTEu5IwqZykoRNZUvCicoTQ9UyVC1D1XLxf5aEE5UnknBHEjaVTWVLwpaETWVLwqayqdyh8qahahmqlqFquXhI5QmVkyRsKlsSnlDZkvCEyiepfNJQtQxVy1C1XHyZypaEE5UtCScqdyThJAmbyqZykoQ7knCi8klD1TJULUPVEn/wQBI2lS0JJypbEu5Q2ZKwqWxJOFE5ScKmsiXhCZUtCXeoPDFULUPVMlQtFw+pnKhsSThROUnCicqWhBOVJ5LwSSonSXjTULUMVctQtVy8LAmbyqayJWFT2ZJwRxJOVE6SsKlsKm9KwkkSTlTeNFQtQ9UyVC0XDyVhU9mScKJyonKShBOVkyRsKidJ+CaVkyRsKk8MVctQtQxVS/zBL5KEb1LZkvCXqTwxVC1D1TJULRe/jModSThReULlJAmbyh1J2FS2JGwqWxLeNFQtQ9UyVC0XDyXhm1ROVO5IwqbypiRsKk8k4ZOGqmWoWoaq5eJlKm9KwpuScJKEE5U7VJ5Q2ZKwqbxpqFqGqmWoWi4+LAl3qNyhsiVhUzlR2ZLwRBKeSMKm8k1D1TJULUPVcvHHJeEkCZvKloQTlROVLQknKlsSTpJwkoRN5YmhahmqlqFqufjHqGxJOFE5ScKJyptUtiScqLxpqFqGqmWoWi4+TOWTVE5UTpJwovKbqHzSULUMVctQtcQfPJCEb1LZknCi8psk4ZNUnhiqlqFqGaqW+IOq/wxVy1C1DFXLULUMVctQtQxVy1C1DFXLULUMVctQtQxVy1C1DFXL/wDeDoj40MiKsAAAAABJRU5ErkJggg==" alt="Qr code">
+            </td>
+            <td style="width: 15%; text-align: center; vertical-align: middle;">
+                <img style="width: 80px; height: 80px;" src="https://svane-el.dk/1223-medium_default/klaebefdder-2mm-25-stk-tilbehr-20008224.jpg" alt="">
+            </td>
+            <td style="width: 15%; text-align: center; vertical-align: middle;">
+                20008224
+            </td>
+            <td style="width: 15%; text-align: center; vertical-align: middle;">
+                KLÆBEFØDDER 2MM 25 STK
+            </td>
+            <td style="width: 15%; text-align: center; vertical-align: middle;">
+                4
+            </td>
+        </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <hr><br><br><br><br><br><br><br><br>
+
+                <div class="row">
+                    <div class="col-12">
+                        <p style="text-align: center; font-weight: bold; font-size: 25px;">FIND MANUALER OG PRODUKT VIDEOER PÅ VORES HJEMMESIDE</p>
+                        <a href="https://svane-el.dk/en/" style="text-decoration: none;">
+                            <p style="font-size: 25px; text-align: center; font-weight: bold; color: #212529;">WWW.SVANE-EL.DK</p>
+                        </a>
+                        <div class="row">
+                            <div class="col-6" style="border-right: 1px solid gray;">
+                                <div style="float: right;">
+                                    <p>Svane Eletronic ApS</p>
+                                    <p>Arildsvej 27</p>
+                                    <p>7442 Engesvang</p>
+                                    <p>CVR 10320305</p>
+                                </div>
+                            </div>
+                            <div class="col-6" style="border-left: 1px solid gray;">
+                                <div style="float: left;">
+                                    <p><i class="fa fa-phone" style="font-size: 35px;"></i> <span>&nbsp;+45 70 25 30 10</span></p>
+                                    <p><i class="fa fa-envelope" style="font-size: 35px;"></i>
+                                        <a href="mailto:kunde@svane-el.com"  style="text-decoration: none;">
+                                            <span  style="font-size: 1rem; text-align: center; font-weight: bold; color: #212529;">&nbsp;kunde@svane-el.com</span>
+                                        </a>
+                                    </p>
+                                    <p><i class="fab fa-facebook-f" style="font-size: 35px;"></i>
+                                        <a href="https://facebook.com/ssihuset"  style="text-decoration: none;">
+                                            <span  style="font-size: 1rem; text-align: center; font-weight: bold; color: #212529;">&nbsp;&nbsp;&nbsp;&nbsp;https://facebook.com/ssihuset</span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-12" style="text-align: center;">
+                        
+                        <img src=data:image/png;base64,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 style="width: 200px; height: 100px"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+</body>
+</html>
